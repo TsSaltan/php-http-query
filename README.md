@@ -4,7 +4,7 @@
 
 Via Composer
 
-### Adding dependences to composer
+### Add dependencies to composer
 ```json
     {
         "minimum-stability": "dev",
@@ -22,7 +22,14 @@ Via Composer
 
 ## Usage
 
-### API Wrapper
+### GET query
 ``` php
-// @todo
+$q = new HttpQuery('https://ipinfo.io/json');
+echo $q->get();
+```
+
+### POST query
+``` php
+$q = new HttpQuery('https://testing-post.php');
+echo $q->post(['message' => 'Hello World!']);
 ```
