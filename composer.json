@@ -1,12 +1,12 @@
 {
-    "name": "tssaltan/php-HttpQuery",
+    "name": "tssaltan/php-http-query",
     "description": "PHP Wrapper for cURL functions",
     "keywords": [
         "php",
         "curl",
-        "http",
+        "http"
     ],
-    "homepage": "https://github.com/TsSaltan/php-HttpQuery",
+    "homepage": "https://github.com/TsSaltan/php-http-query",
     "authors": [
         {
             "name": "Alexey S",
@@ -26,7 +26,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.0"
         }
     }
 }

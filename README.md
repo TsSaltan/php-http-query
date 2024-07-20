@@ -11,16 +11,13 @@ Via Composer
         "repositories": [
             {
                 "type":"git",
-                "url":"https://github.com/TsSaltan/php-HttpQuery"
+                "url":"https://github.com/TsSaltan/php-http-query"
             }
         ],
         "require": {
-            "tssaltan/php-HttpQuery": "dev-master"
+            "tssaltan/php-http-query": "dev-master"
         }
     }
-```
-``` bash
-$ composer require https://github.com/TsSaltan/php-HttpQuery
 ```
 
 ## Usage
