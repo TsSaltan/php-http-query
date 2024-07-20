@@ -1,5 +1,5 @@
 {
-    "name": "HttpQuery",
+    "name": "tssaltan/php-HttpQuery",
     "description": "PHP Wrapper for cURL functions",
     "keywords": [
         "php",
