@@ -1,0 +1,32 @@
+{
+    "name": "HttpQuery",
+    "description": "PHP Wrapper for cURL functions",
+    "keywords": [
+        "php",
+        "curl",
+        "http",
+    ],
+    "homepage": "https://github.com/TsSaltan/php-HttpQuery",
+    "authors": [
+        {
+            "name": "Alexey S",
+            "email": "i@tssaltan.top",
+            "homepage": "https://tssaltan.top",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.1",
+        "ext-curl": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpQuery\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
