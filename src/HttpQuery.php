@@ -122,6 +122,12 @@ class HttpQuery {
 		]);
 	}
 
+	public function setFollowLocation(bool $value){
+		return $this->setParams([
+			CURLOPT_FOLLOWLOCATION => $value
+		]);
+	}
+
 	/**
 	 * Установить файл для хранения кук
 	 * @param string $saveName
