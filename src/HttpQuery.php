@@ -213,17 +213,18 @@ class HttpQuery {
 
 	/**
 	 * Запустить выполнение запроса
-	 * @param  int|integer $attempts Количество попыток
+	 * @param int|integer $attempts Количество попыток
+	 * @param bool $throw_exception Выбрасывать исключение при неудачном завершении запроса
 	 * @return HttpResponse
 	 */
-	public function exec(int $attempts = 1): HttpResponse {
+	public function exec(int $attempts = 1, bool $throw_exception = true): HttpResponse {
 		$attempt = 0;
 		do {
 			$response = new HttpResponse($this->ch);
 		}
 		while($attempt++ < $attempts && $response->hasError());
 
-		if($response->hasError()){
+		if($throw_exception && $response->hasError()){
 			throw new HttpException('Invalid query: ' . $response->getError());
 		}
 
